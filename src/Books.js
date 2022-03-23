@@ -16,9 +16,10 @@ constructor(props){
         Books:[]
     }
 }
+//Home//http://192.168.0.10:8888/api/books
 //THB//http://192.168.0.100:6555/api/books
 componentDidMount(){
-    axios.get('http://192.168.0.10:8888/api/books').then((response)=>this.setState({Books:response.data}))
+    axios.get('http://webapidownloadbooks-dev.us-west-1.elasticbeanstalk.com/api/books').then((response)=>this.setState({Books:response.data}))
 }
 
     render(){
